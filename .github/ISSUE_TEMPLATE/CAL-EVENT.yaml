@@ -1,0 +1,44 @@
+name: Calendar Event
+description: Create a calendar event
+title: "[CNCF Asturias]: "
+labels: ["event"]
+assignees:
+  - torrespro
+body:
+  - type: input
+    id: title
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Event Date
+      description: How can we get in touch with you if we need more info?
+      placeholder: DD/MM/YYYY ex. 11/12/2023
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - Online
+        - In-person
+    validations:
+      required: true
+
